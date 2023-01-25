@@ -25,6 +25,7 @@ public class Receptionist extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         mLabel = new java.awt.Label();
         dUser = new javax.swing.JLabel();
@@ -38,41 +39,71 @@ public class Receptionist extends javax.swing.JFrame {
         setTitle("Receptionist");
         setResizable(false);
         setSize(new java.awt.Dimension(1000, 550));
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new java.awt.GridBagLayout());
 
         mLabel.setAlignment(java.awt.Label.CENTER);
         mLabel.setBackground(new java.awt.Color(0, 153, 153));
         mLabel.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         mLabel.setForeground(new java.awt.Color(255, 255, 255));
         mLabel.setText("Clinic Management System");
-        getContentPane().add(mLabel);
-        mLabel.setBounds(0, 34, 1000, 70);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.ipadx = 703;
+        gridBagConstraints.ipady = 38;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(34, 0, 0, 0);
+        getContentPane().add(mLabel, gridBagConstraints);
 
         dUser.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         dUser.setText("Username:");
-        getContentPane().add(dUser);
-        dUser.setBounds(262, 168, 116, 29);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(64, 262, 0, 0);
+        getContentPane().add(dUser, gridBagConstraints);
 
         rUserField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rUserFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(rUserField);
-        rUserField.setBounds(388, 168, 279, 29);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 215;
+        gridBagConstraints.ipady = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(64, 10, 0, 0);
+        getContentPane().add(rUserField, gridBagConstraints);
 
         plbl.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         plbl.setText("Password:");
-        getContentPane().add(plbl);
-        plbl.setBounds(261, 302, 109, 29);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(105, 261, 0, 0);
+        getContentPane().add(plbl, gridBagConstraints);
 
         rPassField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rPassFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(rPassField);
-        rPassField.setBounds(388, 302, 279, 29);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 215;
+        gridBagConstraints.ipady = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(105, 10, 0, 0);
+        getContentPane().add(rPassField, gridBagConstraints);
 
         rExitBtn.setBackground(new java.awt.Color(0, 204, 204));
         rExitBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -83,8 +114,14 @@ public class Receptionist extends javax.swing.JFrame {
                 rExitBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(rExitBtn);
-        rExitBtn.setBounds(388, 404, 91, 35);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.ipadx = 15;
+        gridBagConstraints.ipady = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(73, 10, 111, 0);
+        getContentPane().add(rExitBtn, gridBagConstraints);
 
         rLoginBtn.setBackground(new java.awt.Color(0, 153, 153));
         rLoginBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -95,8 +132,14 @@ public class Receptionist extends javax.swing.JFrame {
                 rLoginBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(rLoginBtn);
-        rLoginBtn.setBounds(576, 404, 91, 35);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.ipadx = 18;
+        gridBagConstraints.ipady = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(73, 97, 111, 0);
+        getContentPane().add(rLoginBtn, gridBagConstraints);
 
         pack();
         setLocationRelativeTo(null);

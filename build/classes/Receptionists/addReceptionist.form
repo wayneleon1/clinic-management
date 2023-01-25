@@ -44,34 +44,6 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="190" pref="190" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="80" max="-2" attributes="0"/>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="rDateField" min="-2" pref="149" max="-2" attributes="0"/>
-                          <EmptySpace min="121" pref="121" max="-2" attributes="0"/>
-                          <Component id="blood" min="-2" pref="135" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="rBloodField" min="-2" pref="149" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="190" pref="190" max="-2" attributes="0"/>
-                          <Component id="jLabel2" min="-2" pref="80" max="-2" attributes="0"/>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="rIdField" min="-2" pref="149" max="-2" attributes="0"/>
-                          <EmptySpace min="121" pref="121" max="-2" attributes="0"/>
-                          <Component id="jLabel7" min="-2" pref="135" max="-2" attributes="0"/>
-                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-                          <Component id="rPhoneField" min="-2" pref="152" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="120" pref="120" max="-2" attributes="0"/>
-                                  <Component id="rUserField" min="-2" pref="149" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jLabel20" min="-2" pref="140" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="190" pref="190" max="-2" attributes="0"/>
                           <Component id="jLabel3" min="-2" pref="80" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Component id="rNameField" min="-2" pref="149" max="-2" attributes="0"/>
@@ -110,6 +82,42 @@
                           <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
                           <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel1" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="rDateField" min="-2" pref="153" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel2" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="rIdField" min="-2" pref="149" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="121" pref="121" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel7" min="-2" pref="135" max="-2" attributes="0"/>
+                                  <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                                  <Component id="rPhoneField" min="-2" pref="152" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="120" pref="120" max="-2" attributes="0"/>
+                                          <Component id="rUserField" min="-2" pref="149" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel20" min="-2" pref="140" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="blood" min="-2" pref="135" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="rBloodField" min="-2" pref="149" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
                   </Group>
                   <EmptySpace min="0" pref="28" max="32767" attributes="0"/>
               </Group>
@@ -127,12 +135,9 @@
                           <Component id="blood" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="rBloodField" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="rDateField" min="-2" pref="22" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="rDateField" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <Component id="rIdField" min="-2" pref="22" max="-2" attributes="0"/>
@@ -260,15 +265,7 @@
             <Property name="text" type="java.lang.String" value="Date"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="rDateField">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rDateFieldActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JTextField" name="rIdField">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="sjb0HMSr"/>
-          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rIdFieldActionPerformed"/>
           </Events>
@@ -345,7 +342,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="rPhoneField">
           <Properties>
-            <Property name="text" type="java.lang.String" value="+880"/>
+            <Property name="text" type="java.lang.String" value="+250"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rPhoneFieldActionPerformed"/>
@@ -556,6 +553,8 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rPassFieldActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="rDateField">
         </Component>
       </SubComponents>
     </Container>

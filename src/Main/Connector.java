@@ -20,7 +20,7 @@ public class Connector {
         try {
 
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital?useSSL=true", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/clinic?useSSL=true", "root", "");
 //            JOptionPane.showMessageDialog(null, "Connection Established");
             return connection;
         } catch (ClassNotFoundException | SQLException ex) {

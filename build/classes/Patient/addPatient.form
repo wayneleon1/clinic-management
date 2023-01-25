@@ -113,11 +113,13 @@
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="jPanel5" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="pDateField" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="Gender" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="pAddressField" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Gender" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pAddressField" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="pDateField" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -238,15 +240,7 @@
             <Property name="text" type="java.lang.String" value="Date"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="pDateField">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pDateFieldActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JTextField" name="pIdField">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="sjb0HMS"/>
-          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pIdFieldActionPerformed"/>
           </Events>
@@ -503,6 +497,8 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="com.toedter.calendar.JDateChooser" name="pDateField">
+        </Component>
       </SubComponents>
     </Container>
   </SubComponents>

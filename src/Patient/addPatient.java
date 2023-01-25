@@ -33,7 +33,6 @@ public class addPatient extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        pDateField = new javax.swing.JTextField();
         pIdField = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         pNameField = new javax.swing.JTextField();
@@ -56,6 +55,7 @@ public class addPatient extends javax.swing.JFrame {
         addDctorbtn = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         clearPbtn = new javax.swing.JLabel();
+        pDateField = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Add Patient");
@@ -108,13 +108,6 @@ public class addPatient extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 153, 153));
         jLabel1.setText("Date");
 
-        pDateField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pDateFieldActionPerformed(evt);
-            }
-        });
-
-        pIdField.setText("sjb0HMS");
         pIdField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pIdFieldActionPerformed(evt);
@@ -319,11 +312,12 @@ public class addPatient extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(pDateField, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Gender)
-                    .addComponent(pAddressField, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(Gender)
+                        .addComponent(pAddressField, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pDateField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -384,10 +378,6 @@ public class addPatient extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jLabel19MouseClicked
 
-    private void pDateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pDateFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pDateFieldActionPerformed
-
     private void pIdFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pIdFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_pIdFieldActionPerformed
@@ -427,7 +417,7 @@ public class addPatient extends javax.swing.JFrame {
     private void addDctorbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addDctorbtnMouseClicked
         connection = Connector.ConnectDb();
         if (connection != null) {
-            String date = pDateField.getText();
+            String date = pDateField.getDate().toString();
             String id = pIdField.getText();
             String name = pNameField.getText();
             int age = Integer.parseInt(pAgeField.getText());
@@ -458,12 +448,12 @@ public class addPatient extends javax.swing.JFrame {
     }//GEN-LAST:event_addDctorbtnMouseClicked
 
     private void clearPbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearPbtnMouseClicked
-        pDateField.setText("");
+        //pDateField.setText("");
         pNameField.setText("");
         pAgeField.setText("");
-        pIdField.setText("sjb0HMS");
+        pIdField.setText("");
         pAddressField.setText("");
-        pPhoneField.setText("");
+        pPhoneField.setText("+250");
         pDiseaseField.setText("");
         pRoomField.setText("");
         pGenderField.setSelectedIndex(0);
@@ -471,12 +461,12 @@ public class addPatient extends javax.swing.JFrame {
     }//GEN-LAST:event_clearPbtnMouseClicked
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
-        pDateField.setText("");
+       // pDateField.setText("");
         pNameField.setText("");
         pAgeField.setText("");
-        pIdField.setText("sjb0HMS");
+        pIdField.setText("");
         pAddressField.setText("");
-        pPhoneField.setText("");
+        pPhoneField.setText("+250");
         pDiseaseField.setText("");
         pRoomField.setText("");
         pGenderField.setSelectedIndex(0);
@@ -518,7 +508,7 @@ public class addPatient extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JTextField pAddressField;
     private javax.swing.JTextField pAgeField;
-    private javax.swing.JTextField pDateField;
+    private com.toedter.calendar.JDateChooser pDateField;
     private javax.swing.JTextField pDiseaseField;
     private javax.swing.JComboBox<String> pGenderField;
     private javax.swing.JTextField pIdField;
